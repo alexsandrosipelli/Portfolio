@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-primary: #fff;
+    --text-secondary: #fff;
+    --font-heading: 'Poppins', sans-serif;
+    --font-default: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-default);
+    background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1120&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* Navbar */
+#hamburguer {
+    position: fixed;
+    right: 5rem;
+    top: 2rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+#hamburguer .linha {
+    margin-top: 1rem;
+    padding: auto;
+    height: 1rem;
+    width: 150%;
+    background-color: #000;
+    box-shadow: 0 .5rem .5rem #2196F3;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #2196F3;
+    height: 100vh;
+    width: 15rem;
+    z-index: 10;
+    right: -20rem;
+    transition: right 1s;
+}
+
+.menu-show {
+    right: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--text-secondary);
+}
+
+nav a:hover {
+    color: #1A237E;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    height: 100vh;
+    padding-top: 12.5rem;
+    padding-right: 10rem;
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 5rem;
+}
+
+header span {
+    font-size: 2rem;
+    color: #2196F3;
+}
+
+/* Section Apresentação */
+#secao-apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: 100vh;
+    padding-top: 12.5rem;
+    padding-right: 10rem;
+}
+
+#fotoEContato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#fotoEContato img {
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
+}
+
+#secao-apresentacao p {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 5rem 5rem 5rem rgba(0, 0, 0, 0);
+}
+
+#secao-apresentacao li {
+    list-style: none;
+    font-size: 2.5rem;
+}
+
+#secao-apresentacao h2 {
+    font-size: 3rem;
+    text-shadow: 2rem 2rem 2rem rgba(10, 10, 10, 5);
+}
+
+#secao-apresentacao h3 {
+    font-size: 2.5rem;
+    color: #2196F3;
+}
+
+#secao-apresentacao div {
+    text-align: center;
+}
+
+#contatos {
+    padding-top: 1rem;
+}
+
+#contatos a {
+    font-size: 2rem;
+}
+
+.botao1 {
+    text-decoration: none;
+    background-color: #2196F3;
+    color: #000;
+    padding: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.botao1:hover {
+    background-color: #3578e5;
+}
+
+/* Section Projetos */
+#secao-projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 100vh;
+    padding-top: 12.5rem;
+    padding-right: 10rem;
+    gap: 5rem;
+    padding: 5rem;
+}
+
+#secao-projetos ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.card {
+    width: 25rem;
+    height: 30rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    border-radius: 1rem;
+}
+
+.card-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.card:hover .card-img-wrapper img {
+    opacity: 0.5;
+}
+
+.card-text {
+    position: absolute;
+    bottom: -2rem;
+    opacity: 0;
+    padding: 2rem;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+    margin-bottom: 7em;
+}
+
+.card:hover .card-text {
+    opacity: 1;
+    bottom: 0;
+}
+
+.card h2 {
+    font-size: 2rem;
+    color: var(--text-primary);
+}
+
+.card h3 {
+    font-size: 1.6rem;
+    color: var(--text-secondary);
+}
+
+.card p {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+
+.card .botao {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3b5998;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.card .botao:hover {
+    background-color: #3578e5;
+}
