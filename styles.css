@@ -22,7 +22,8 @@ html {
 
 body {
     font-family: var(--font-default);
-    background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1120&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Substitua pelo caminho da sua imagem */
+    background-image: url(' https://images.unsplash.com/photo-1702731798357-22bd8ca4a484?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,6 +80,39 @@ nav a:hover {
     color: #1A237E;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    /* Position the tooltip above the icon */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip i {
+    font-size: 24px;
+}
+
 /* Header */
 header {
     display: flex;
@@ -102,26 +136,29 @@ header span {
 
 /* Section Apresentação */
 #secao-apresentacao {
+
+    background-color: #0e3f68;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 1rem;
     height: 100vh;
-    padding-top: 12.5rem;
-    padding-right: 10rem;
+
+    padding-top: 0rem;
+
 }
 
 #fotoEContato {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 2rem;
 }
 
 #fotoEContato img {
     border-radius: 50%;
-    width: 25rem;
-    height: 25rem;
+    width: 50rem;
+    height: 50rem;
 }
 
 #secao-apresentacao p {
@@ -136,14 +173,13 @@ header span {
 }
 
 #secao-apresentacao h2 {
+    padding: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3rem;
     text-shadow: 2rem 2rem 2rem rgba(10, 10, 10, 5);
 }
 
-#secao-apresentacao h3 {
-    font-size: 2.5rem;
-    color: #2196F3;
-}
+
 
 #secao-apresentacao div {
     text-align: center;
@@ -171,9 +207,9 @@ header span {
     background-color: #3578e5;
 }
 
-/* Section Projetos */
 #secao-projetos {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -182,6 +218,7 @@ header span {
     padding-right: 10rem;
     gap: 5rem;
     padding: 5rem;
+    font-size: 5rem;
 }
 
 #secao-projetos ul {
@@ -221,6 +258,7 @@ header span {
 
 .card-text {
     position: absolute;
+    font-size: 1rem;
     bottom: -2rem;
     opacity: 0;
     padding: 2rem;
