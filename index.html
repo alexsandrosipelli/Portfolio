@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
+    
     <nav>
         <div id="hamburguer">
             <div class="linha" id="linha1"></div>
@@ -44,137 +44,123 @@
                 </a></li>
         </ul>
     </nav>
-    <header>
+
+    <header class="text-center my-4">
         <h1>Alexsandro Sipelli</h1>
         <h2>
-            <span class="tooltip">
-                <i class="fab fa-java"></i>
-                <span class="tooltiptext">JAVA</span>
-            </span>
-            <span class="tooltip">
-                <i class="fas fa-leaf"></i>
-                <span class="tooltiptext">SPRING BOOT</span>
-            </span>
-            <span class="tooltip">
-                <i class="fab fa-html5"></i>
-                <span class="tooltiptext">HTML5</span>
-            </span>
-            <span class="tooltip">
-                <i class="fab fa-css3-alt"></i>
-                <span class="tooltiptext">CSS</span>
-            </span>
-            <span class="tooltip">
-                <i class="fas fa-database"></i>
-                <span class="tooltiptext">MySQL</span>
-            </span>
-            <span class="tooltip">
-                <i class="fas fa-server"></i>
-                <span class="tooltiptext">Outros Bancos de Dados Relacionais</span>
-            </span>
+            <i class="fa-brands fa-github icon-github"></i>
+            <i class="fa-solid fa-database icon-database"></i>
+            <i class="fa-brands fa-java icon-java"></i>
+            <i class="fa-brands fa-js icon-js"></i>
+            <i class="fa-brands fa-html5 icon-html5"></i>
+            <i class="fa-brands fa-css3-alt icon-css3"></i>
+            <i class="fa-brands fa-youtube icon-youtube"></i>
         </h2>
     </header>
 
-    <section id="secao-apresentacao">
-        <div id="fotoEContato">
-            <img id="avatar" src="https://avatars.githubusercontent.com/u/112717598?v=4" alt="foto Alexsandro">
-        </div>
-        <div>
-
-            <h2>Sobre mim:</h2>
-            <p>Olá, sou Alexsandro, um entusiasta apaixonado por tecnologia e inovação. Estou atualmente mergulhando no
-                vasto mundo da Análise e Desenvolvimento de Sistemas, buscando não apenas aprender, mas também criar
-                impacto através do meu trabalho. Minha jornada é impulsionada pela busca constante de desafios e pela
-                vontade de transformar ideias em soluções concretas.</p>
-            <p>Além disso, tenho um canal no YouTube onde demonstro minhas habilidades no desenvolvimento de projetos,
-                compartilhando conhecimento e inspirando outros a seguirem o caminho da tecnologia. Através do meu
-                canal, mostro tutoriais, dicas e meus próprios projetos.</p>
-
-            <h2>Minhas habilidades incluem:</h2>
-            <ul>
-                <li>HTML5 e CSS para criar interfaces intuitivas e visualmente atraentes.</li>
-                <li>Java e JavaScript para desenvolver aplicações robustas e dinâmicas.</li>
-                <li>MySQL para gerenciar e otimizar dados com eficiência.</li>
-                <li>Spring Boot para construir APIs e aplicações escaláveis.</li>
-                <li>GitHub como meu playground para colaboração e versionamento de código.</li>
-            </ul>
-
-            <h2>Áreas que me fascinam:</h2>
-            <ul>
-                <li>Explorar novas possibilidades no desenvolvimento júnior.</li>
-                <li>Desenvolver soluções web que simplifiquem a vida das pessoas.</li>
-                <li>Explorar o vasto campo dos bancos de dados para criar estruturas eficazes.</li>
-            </ul>
-
-
-            <div id="contatos">
-                <a href="https://www.linkedin.com/in/alexsandro-sipelli/ " target="_blank" class=" botao1 "> <i
-                        class="fa-brands fa-linkedin"></i> Linkdin </a>
-                <a href="https://github.com/alexsandrosipelli" target="_blank" class=" botao1 "> <i
-                        class="fa-brands fa-github"></i> GitHub
-                    <a href="https://api.whatsapp.com/send?phone=5511948914961& text=Ola alexsandro estou interessado em seu perfil "
-                        target="_blank" class=" botao1 "> <i class="fa-brands fa-whatsapp"></i> whatsapp </a>
-
+    <section id="secao-apresentacao" class="container">
+        <div class="row">
+            <div id="fotoEContato" class="col-md-4">
+                <img id="avatar" src="https://avatars.githubusercontent.com/u/112717598?v=4" alt="foto Alexsandro"
+                    class="img-fluid">
             </div>
-
+            <div class="col-md-8">
+                <h2>Sobre mim:</h2>
+                <p>Olá, sou Alexsandro, um entusiasta apaixonado por tecnologia e inovação. Estou atualmente mergulhando
+                    no vasto mundo da Análise e Desenvolvimento de Sistemas, buscando não apenas aprender, mas também
+                    criar impacto através do meu trabalho. Minha jornada é impulsionada pela busca constante de desafios
+                    e pela vontade de transformar ideias em soluções concretas.</p>
+                <p>Além disso, tenho um canal no YouTube onde demonstro minhas habilidades no desenvolvimento de
+                    projetos, compartilhando conhecimento e inspirando outros a seguirem o caminho da tecnologia.
+                    Através do meu canal, mostro tutoriais, dicas e meus próprios projetos.</p>
+                <h2>Minhas habilidades incluem:</h2>
+                <ul>
+                    <li>HTML5 e CSS para criar interfaces intuitivas e visualmente atraentes.</li>
+                    <li>Java e JavaScript para desenvolver aplicações robustas e dinâmicas.</li>
+                    <li>MySQL para gerenciar e otimizar dados com eficiência.</li>
+                    <li>Spring Boot para construir APIs e aplicações escaláveis.</li>
+                    <li>GitHub como meu playground para colaboração e versionamento de código.</li>
+                </ul>
+                <h2>Áreas que me fascinam:</h2>
+                <ul>
+                    <li>Explorar novas possibilidades no desenvolvimento júnior.</li>
+                    <li>Desenvolver soluções web que simplifiquem a vida das pessoas.</li>
+                    <li>Explorar o vasto campo dos bancos de dados para criar estruturas eficazes.</li>
+                </ul>
+                <div id="contatos">
+                    <a href="https://www.linkedin.com/in/alexsandro-sipelli/" target="_blank" class="btn btn-primary"><i
+                            class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/alexsandrosipelli" target="_blank" class="btn btn-dark"><i
+                            class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="https://api.whatsapp.com/send?phone=5511948914961&text=Ola alexsandro estou interessado em seu perfil"
+                        target="_blank" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="secao-projetos">
-
+    <section id="secao-projetos" class="container my-4">
         <div>
-
-            <h1>Projetos{ </h1>
+            <h1>Projetos</h1>
         </div>
-        <ul>
-            <li>
+        <ul class="row">
+            <li class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1611996575749-79a3a250f948?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                            alt="imagem do projeto " />
-
+                            class="card-img-top" alt="imagem do projeto">
                     </div>
-                    <div class="card-text">
-                        <h2>Desenvolvimento</h2>
-                        <h3>Jogo</h3>
-                        <p id="areadosbrabo">Modulação em matematica e equação 2°grau</p>
-                        <a href="https://github.com/alexsandrosipelli/Projetos-2022" target="_blank" class="botao">saiba mais</a>
+                    <div class="card-body">
+                        <h5 class="card-title">Desenvolvimento</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Jogo</h6>
+                        <p class="card-text">Modulação em matemática e equação de 2° grau.</p>
+                        <a href="https://github.com/alexsandrosipelli/Projetos-2022" target="_blank"
+                            class="btn btn-primary">Saiba mais</a>
                     </div>
                 </div>
             </li>
-            <li>
+            <li class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                            alt="imagem do projeto " />
+                            class="card-img-top" alt="imagem do projeto">
                     </div>
-                    <div class="card-text">
-                        <h2>Desenvolvimento</h2>
-                        <h3>Portifólio</h3>
-                        <p id="areadosbrabo">Portfólio com a intencão de demonstrar um pouco dos meus
-                            Conhecimentos
-                        </p>
-                        <a href="https://github.com/alexsandrosipelli/Portfolio"target="_blank" class="botao"> saiba mais</a>
+                    <div class="card-body">
+                        <h5 class="card-title">Desenvolvimento</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Portfólio</h6>
+                        <p class="card-text">Portfólio com a intenção de demonstrar um pouco dos meus conhecimentos.</p>
+                        <a href="https://github.com/alexsandrosipelli/Portfolio" target="_blank"
+                            class="btn btn-primary">Saiba mais</a>
                     </div>
+                </div>
             </li>
-            <li>
+            <li class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-img-wrapper">
                         <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                            alt="imagem do projeto " />
+                            class="card-img-top" alt="imagem do projeto">
                     </div>
-                    <div class="card-text">
-                        <h2>Aconpanhe no YouTube</h2>
-                        <h3>Projetos em JAVA</h3>
-                        <p id="areadosbrabo"> Alguns projetos em java desenvolvido por mim</p>
-                        <a href="https://www.youtube.com/channel/UCqJ5A2u6PIbgyUsZA0orDJw"target="_blank" class="botao"> saiba mais</a>
+                    <div class="card-body">
+                        <h5 class="card-title">Acompanhe no YouTube</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Projetos em JAVA</h6>
+                        <p class="card-text">Alguns projetos em Java desenvolvidos por mim.</p>
+                        <a href="https://www.youtube.com/channel/UCqJ5A2u6PIbgyUsZA0orDJw" target="_blank"
+                            class="btn btn-primary">Saiba mais</a>
                     </div>
+                </div>
             </li>
         </ul>
-        <h1>},</h1>
     </section>
 
-    <script src="js/menu.js"></script>
 
+    <footer class="container text-center my-4">
+        <p>© 2023 Alexsandro Sipelli</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+<script src="js/menu.js"></script>
 
 </html>
