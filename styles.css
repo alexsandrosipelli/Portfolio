@@ -144,6 +144,51 @@ footer p {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    #hamburguer {
+        position: fixed;
+        right: 1rem;
+        top: 2.3rem;
+        height: 1rem;
+        width: 2.0rem;
+    }
+    
+    #hamburguer .linha {
+        margin-top: 0.3rem;
+        padding: 0.5;
+        height: 0.7rem;
+        border-radius: 50%;
+        width: 100%;
+        background-color: #333;
+        box-shadow: 0 .5rem .5rem #333;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: #adb7c2;
+        height: 100vh;
+        width: 5rem;
+        z-index: 10;
+        right: -20rem;
+        transition: right 1s;
+    }
+    nav li {
+        list-style: none;
+    }
+    
+    nav a {
+        text-decoration: none;
+        font-size: 0.6rem;
+        color: #000;
+    }
+    
+    nav a:hover {
+        color:#fff;
+        
+    }
+    nav ul{padding-top: 50vh;}
+    
     header h1 {
         font-size: 2em;
     }
