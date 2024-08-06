@@ -72,6 +72,7 @@ nav ul {
 
 
 header {
+    size: 100vh;
     background: #adb7c2;
     color: white;
     padding: 20px 0;
@@ -204,11 +205,11 @@ footer p {
     }
 
     header h1 {
-        font-size: 2em;
+        font-size: 2rem;
     }
 
     header h2 {
-        font-size: 1.2em;
+        font-size: 1rem;
     }
 
     #fotoEContato {
