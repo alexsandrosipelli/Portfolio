@@ -484,6 +484,7 @@ body::before {
   color: var(--primary);
   text-decoration: none;
   text-shadow: 0 0 15px var(--glow-color);
+  padding: 1rem;
 }
 
 .nav-list {
@@ -640,14 +641,13 @@ body::before {
 
 .tech-icons {
   position: absolute;
-  bottom: -20px;
+  bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   gap: 3rem;
   background: var(--bg-card);
   padding: 0.1rem 1.2rem;
-  padding: 0.1rem;
   border-radius: 50px;
   box-shadow: var(--shadow);
   border: 1px solid var(--border-color);
@@ -1988,7 +1988,7 @@ a {
     padding: 2rem 1.5rem;
   }
   .modal-header {
-    padding: 2rem 1.5rem 0;
+    padding: 1rem 1.5rem 0;
   }
   .modal-links {
     flex-direction: column;
@@ -2026,12 +2026,16 @@ a {
     font-weight: 700;
   }
   .modal-content {
-    margin: 1rem;
+    margin: 0.9rem;
     padding: 0;
   }
   .modal-header h2 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
+  .modal-subtitle {
+    font-size: 0.9rem;
+  }
+  
   .contact-text p {
     font-size: 1rem;
     font-weight: 700;
