@@ -2019,9 +2019,15 @@ a {
   .container {
     padding: 0 1rem;
   }
-   .nav-container{
-    align-items: normal;
-   }
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 🔥 ESSENCIAL */
+    height: 64px;
+  }
 
   .filter-btn {
     padding: 0.75rem 1.5rem;
@@ -2029,20 +2035,42 @@ a {
     font-weight: 700;
   }
   .modal-content {
+    height: 92vh; /* 🔥 ESSENCIAL */
+    max-height: 92vh;
     margin: 0.9rem;
     padding: 0;
-  }
-  .modal-body {
-    width: auto;
-    height: auto;
-    display: flex;
+    display: flex; /* 🔥 ESSENCIAL */
     flex-direction: column;
+    overflow: hidden; /* 🔥 ESSENCIAL */
+    border-radius: 18px;
   }
+
+  .modal-header {
+    padding: 1rem;
+    flex-shrink: 0;
+  }
+
   .modal-header h2 {
     font-size: 1rem;
   }
+
   .modal-subtitle {
     font-size: 0.9rem;
+  }
+
+  .modal-body {
+    flex: 1; /* 🔥 ESSENCIAL */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    overflow-y: auto; /* 🔥 scroll só aqui */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .modal-footer {
+    padding: 0.9rem 1rem;
+    flex-shrink: 0;
   }
 
   .contact-text p {
