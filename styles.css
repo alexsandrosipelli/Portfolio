@@ -2016,6 +2016,9 @@ a {
   .hero-subtitle {
     font-size: 1.1rem;
   }
+  .tech-icons {
+    padding-right: 1rem;
+  }
   .container {
     padding: 0 1rem;
   }
