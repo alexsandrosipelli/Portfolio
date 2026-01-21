@@ -2035,16 +2035,17 @@ a {
     font-weight: 700;
   }
   .modal-content {
-    height: 92vh; /* 🔥 ESSENCIAL */
-    max-height: 92vh;
-    margin: 0.9rem;
+    position: fixed;
+    inset: 1rem; /* 🔥 margem mínima em todos os lados */
+    height: auto;
+    max-height: calc(100vh - 2rem);
+    margin: 0;
     padding: 0;
-    display: flex; /* 🔥 ESSENCIAL */
+    display: flex;
     flex-direction: column;
-    overflow: hidden; /* 🔥 ESSENCIAL */
-    border-radius: 18px;
+    border-radius: 20px;
+    overflow: hidden;
   }
-
   .modal-header {
     padding: 1rem;
     flex-shrink: 0;
